@@ -65,6 +65,11 @@ header =
             [ ( "text-align", "center" )
             , ( "padding", "10px" )
             , ( "border-bottom", "5px solid #C4C4C4" )
+            , ( "position", "fixed" )
+            , ( "top", "0px" )
+            , ( "height", "fit-content" )
+            , ( "width", "100%" )
+            , ( "background-color", "white" )
             ]
         ]
         [ nav []
@@ -103,7 +108,9 @@ body =
         , aboutMePage
         , parallaxVid "noeliloop.mp4"
         , photoGallery
+        , video
         , contactPage
+        , footer
         ]
 
 
@@ -158,8 +165,10 @@ aboutMePage =
     div
         [ style
             [ ( "color", "black" )
-            , ( "height", "700px" )
+            , ( "height", "fit-content" )
             , ( "background-color", "white" )
+            , ( "padding", "40px" )
+            , ( "max-width", "1500px" )
             ]
         ]
         [ h1
@@ -168,34 +177,51 @@ aboutMePage =
                 , ( "margin-top", "70px" )
                 , ( "text-align", "center" )
                 , ( "font-family", "GlossAndBloom" )
+                , ( "font-size", "4em" )
                 ]
             ]
             [ text "About Me" ]
-        , div
-            [ style
-                [ ( "height", "432px" )
-                , ( "width", "432px" )
-                , ( "border", "5px solid rgba(255, 255, 255, 1)" )
-                , ( "box-shadow", "0 1px 3px rgba(0, 0, 0, 0.5)" )
-                , ( "background-image", """url("noeliheadshot.webp")""" )
-                , ( "background-position", "center" )
-                , ( "background-repeat", "no-repeat" )
-                , ( "background-size", "cover" )
+        , table []
+            [ tr []
+                [ td [ style [ ( "vertical-align", "top" ) ] ] [ headshot ]
+                , td [] [ aboutMeText ]
                 ]
             ]
-            []
-        , div
-            [ style
-                [ ( "font-family", "LibreBaskerville" )
-                ]
+        ]
+
+
+headshot =
+    div
+        [ style
+            [ ( "height", "432px" )
+            , ( "width", "432px" )
+            , ( "float", "left" )
+            , ( "margin", "30px" )
+            , ( "border", "5px solid rgba(255, 255, 255, 1)" )
+            , ( "box-shadow", "0 1px 3px rgba(0, 0, 0, 0.5)" )
+            , ( "background-image", """url("noeliheadshot.webp")""" )
+            , ( "background-position", "center" )
+            , ( "background-repeat", "no-repeat" )
+            , ( "background-size", "cover" )
             ]
-            [ p [] [ text "Noeli Acoba was a college student when she became captivated with circus. With her background in competitive figure skating, she quickly realized her true love for creating and performing new feats in the air. After graduating UC Davis with a degree in Biotechnology, she became a circus artist and never turned back." ]
-            , p [] [ text "Noeli has trained aerial rope and silks under both Julia Grace and Paper Doll Militia’s Co-Artistic Director, Rain Anya. She was accepted into and attended Cirque School LA’s Cirque Intensive for Emerging Artists under the mentorship of its founder, Cirque du Soleil veteran Aloysia Gavre." ]
-            , p [] [ text "Noeli was the Apprentice Mentorship Program (AMP) Student for 2017 and a member of the Pre-Professional Troupe at Kinetic Theory Circus Arts in Los Angeles, California. She trained full-time in her specialty (aerial rope), as well as single-point and static trapeze, basic acrobatics, dance, and physical theatre. At Kinetic Theory, she was mentored by renowned circus performer & instructor, Eric Newton (Cirque du Soleil & Cirque Eloize)." ]
-            , p [] [ text "She is also the Arts Administrator for the international aerial-theatre company Paper Doll Militia." ]
-            , p [] [ text "Equipped with the knowledge of diverse West Coast aerial styles, Noeli intricately blends static moments and dynamic movement within her innovative acts. Delivering raw, compelling storytelling through unique choreography, Noeli is a powerful force to be reckoned with." ]
-            , p [] [ a [] [ text "Click here" ], text " for Noeli's CV" ]
+        ]
+        []
+
+
+aboutMeText =
+    div
+        [ style
+            [ ( "font-family", "LibreBaskerville" )
+            , ( "width", "480px" )
+            , ( "float", "right" )
             ]
+        ]
+        [ p [] [ text "Noeli Acoba was a college student when she became captivated with circus. With her background in competitive figure skating, she quickly realized her true love for creating and performing new feats in the air. After graduating UC Davis with a degree in Biotechnology, she became a circus artist and never turned back." ]
+        , p [] [ text "Noeli has trained aerial rope and silks under both Julia Grace and Paper Doll Militia’s Co-Artistic Director, Rain Anya. She was accepted into and attended Cirque School LA’s Cirque Intensive for Emerging Artists under the mentorship of its founder, Cirque du Soleil veteran Aloysia Gavre." ]
+        , p [] [ text "Noeli was the Apprentice Mentorship Program (AMP) Student for 2017 and a member of the Pre-Professional Troupe at Kinetic Theory Circus Arts in Los Angeles, California. She trained full-time in her specialty (aerial rope), as well as single-point and static trapeze, basic acrobatics, dance, and physical theatre. At Kinetic Theory, she was mentored by renowned circus performer & instructor, Eric Newton (Cirque du Soleil & Cirque Eloize)." ]
+        , p [] [ text "She is also the Arts Administrator for the international aerial-theatre company Paper Doll Militia." ]
+        , p [] [ text "Equipped with the knowledge of diverse West Coast aerial styles, Noeli intricately blends static moments and dynamic movement within her innovative acts. Delivering raw, compelling storytelling through unique choreography, Noeli is a powerful force to be reckoned with." ]
+        , p [] [ a [] [ text "Click here" ], text " for Noeli's CV" ]
         ]
 
 
@@ -211,15 +237,48 @@ photoGallery =
             [ ( "color", "black" )
             , ( "height", "700px" )
             , ( "background-color", "white" )
+            , ( "text-align", "center" )
+            , ( "padding", "20px" )
+            , ( "padding-top", "60px" )
             ]
         ]
         [ h1
             [ style
                 [ ( "margin", "0px" )
+                , ( "font-family", "GlossAndBloom" )
+                , ( "font-size", "4em" )
                 ]
             ]
             [ text "Photo Gallery" ]
         , p [] [ text "Photos here" ]
+        ]
+
+
+
+{--
+-- VIDEO
+--}
+
+
+video =
+    div
+        [ style
+            [ ( "color", "white" )
+            , ( "height", "700px" )
+            , ( "background-color", "black" )
+            , ( "text-align", "center" )
+            , ( "padding", "20px" )
+            , ( "padding-top", "60px" )
+            ]
+        ]
+        [ h1
+            [ style
+                [ ( "margin", "0px" )
+                , ( "font-family", "GlossAndBloom" )
+                , ( "font-size", "4em" )
+                ]
+            ]
+            [ text "Video" ]
         , p [] [ text "Videos here" ]
         ]
 
@@ -236,16 +295,56 @@ contactPage =
             [ ( "color", "black" )
             , ( "height", "700px" )
             , ( "background-color", "white" )
+            , ( "text-align", "center" )
+            , ( "padding", "20px" )
+            , ( "padding-top", "60px" )
             ]
         ]
         [ h1
             [ style
                 [ ( "margin", "0px" )
+                , ( "font-family", "GlossAndBloom" )
+                , ( "font-size", "4em" )
                 ]
             ]
             [ text "Contact" ]
         , p [] [ text "For booking and press inquiries, please complete this form" ]
         , p [] [ text "form here" ]
+        ]
+
+
+
+{--
+-- FOOTER
+--}
+
+
+footer =
+    div
+        [ style
+            [ ( "color", "white" )
+            , ( "height", "190px" )
+            , ( "background-color", "black" )
+            , ( "text-align", "center" )
+            ]
+        ]
+        [ a
+            [ style
+                [ ( "font-size", "3em" )
+                , ( "padding-top", "100px" )
+                , ( "color", "#A5823B" )
+                ]
+            ]
+            [ text "^" ]
+        , p
+            [ style
+                [ ( "margin", "0px" )
+                , ( "font-family", "LibreBaskerville" )
+                , ( "font-size", "0.8em" )
+                , ( "font-style", "italic" )
+                ]
+            ]
+            [ text "© Copyright 2018 Noeli Acoba - all rights reserved" ]
         ]
 
 
