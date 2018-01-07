@@ -8537,7 +8537,19 @@ var _user$project$Main$aboutMePage = A2(
 					{
 						ctor: '::',
 						_0: {ctor: '_Tuple2', _0: 'margin', _1: '0px'},
-						_1: {ctor: '[]'}
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'margin-top', _1: '70px'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'text-align', _1: 'center'},
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'font-family', _1: 'GlossAndBloom'},
+									_1: {ctor: '[]'}
+								}
+							}
+						}
 					}),
 				_1: {ctor: '[]'}
 			},
@@ -8549,41 +8561,68 @@ var _user$project$Main$aboutMePage = A2(
 		_1: {
 			ctor: '::',
 			_0: A2(
-				_elm_lang$html$Html$p,
-				{ctor: '[]'},
+				_elm_lang$html$Html$div,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('Noeli Acoba was a college student when she became captivated with circus. With her background in competitive figure skating, she quickly realized her true love for creating and performing new feats in the air. After graduating UC Davis with a degree in Biotechnology, she became a circus artist and never turned back.'),
+					_0: _elm_lang$html$Html_Attributes$style(
+						{
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'height', _1: '432px'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'width', _1: '432px'},
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'border', _1: '5px solid rgba(255, 255, 255, 1)'},
+									_1: {
+										ctor: '::',
+										_0: {ctor: '_Tuple2', _0: 'box-shadow', _1: '0 1px 3px rgba(0, 0, 0, 0.5)'},
+										_1: {
+											ctor: '::',
+											_0: {ctor: '_Tuple2', _0: 'background-image', _1: 'url(\"noeliheadshot.webp\")'},
+											_1: {
+												ctor: '::',
+												_0: {ctor: '_Tuple2', _0: 'background-position', _1: 'center'},
+												_1: {
+													ctor: '::',
+													_0: {ctor: '_Tuple2', _0: 'background-repeat', _1: 'no-repeat'},
+													_1: {
+														ctor: '::',
+														_0: {ctor: '_Tuple2', _0: 'background-size', _1: 'cover'},
+														_1: {ctor: '[]'}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}),
 					_1: {ctor: '[]'}
-				}),
+				},
+				{ctor: '[]'}),
 			_1: {
 				ctor: '::',
 				_0: A2(
-					_elm_lang$html$Html$p,
-					{ctor: '[]'},
+					_elm_lang$html$Html$div,
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html$text('Noeli has trained aerial rope and silks under both Julia Grace and Paper Doll Militia’s Co-Artistic Director, Rain Anya. She was accepted into and attended Cirque School LA’s Cirque Intensive for Emerging Artists under the mentorship of its founder, Cirque du Soleil veteran Aloysia Gavre.'),
+						_0: _elm_lang$html$Html_Attributes$style(
+							{
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'font-family', _1: 'LibreBaskerville'},
+								_1: {ctor: '[]'}
+							}),
 						_1: {ctor: '[]'}
-					}),
-				_1: {
-					ctor: '::',
-					_0: A2(
-						_elm_lang$html$Html$p,
-						{ctor: '[]'},
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html$text('Noeli was the Apprentice Mentorship Program (AMP) Student for 2017 and a member of the Pre-Professional Troupe at Kinetic Theory Circus Arts in Los Angeles, California. She trained full-time in her specialty (aerial rope), as well as single-point and static trapeze, basic acrobatics, dance, and physical theatre. At Kinetic Theory, she was mentored by renowned circus performer & instructor, Eric Newton (Cirque du Soleil & Cirque Eloize).'),
-							_1: {ctor: '[]'}
-						}),
-					_1: {
+					},
+					{
 						ctor: '::',
 						_0: A2(
 							_elm_lang$html$Html$p,
 							{ctor: '[]'},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('She is also the Arts Administrator for the international aerial-theatre company Paper Doll Militia.'),
+								_0: _elm_lang$html$Html$text('Noeli Acoba was a college student when she became captivated with circus. With her background in competitive figure skating, she quickly realized her true love for creating and performing new feats in the air. After graduating UC Davis with a degree in Biotechnology, she became a circus artist and never turned back.'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
@@ -8593,7 +8632,7 @@ var _user$project$Main$aboutMePage = A2(
 								{ctor: '[]'},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Equipped with the knowledge of diverse West Coast aerial styles, Noeli intricately blends static moments and dynamic movement within her innovative acts. Delivering raw, compelling storytelling through unique choreography, Noeli is a powerful force to be reckoned with.'),
+									_0: _elm_lang$html$Html$text('Noeli has trained aerial rope and silks under both Julia Grace and Paper Doll Militia’s Co-Artistic Director, Rain Anya. She was accepted into and attended Cirque School LA’s Cirque Intensive for Emerging Artists under the mentorship of its founder, Cirque du Soleil veteran Aloysia Gavre.'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {
@@ -8603,14 +8642,58 @@ var _user$project$Main$aboutMePage = A2(
 									{ctor: '[]'},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Click here for Noeli\'s CV'),
+										_0: _elm_lang$html$Html$text('Noeli was the Apprentice Mentorship Program (AMP) Student for 2017 and a member of the Pre-Professional Troupe at Kinetic Theory Circus Arts in Los Angeles, California. She trained full-time in her specialty (aerial rope), as well as single-point and static trapeze, basic acrobatics, dance, and physical theatre. At Kinetic Theory, she was mentored by renowned circus performer & instructor, Eric Newton (Cirque du Soleil & Cirque Eloize).'),
 										_1: {ctor: '[]'}
 									}),
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$p,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('She is also the Arts Administrator for the international aerial-theatre company Paper Doll Militia.'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$p,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('Equipped with the knowledge of diverse West Coast aerial styles, Noeli intricately blends static moments and dynamic movement within her innovative acts. Delivering raw, compelling storytelling through unique choreography, Noeli is a powerful force to be reckoned with.'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$p,
+												{ctor: '[]'},
+												{
+													ctor: '::',
+													_0: A2(
+														_elm_lang$html$Html$a,
+														{ctor: '[]'},
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html$text('Click here'),
+															_1: {ctor: '[]'}
+														}),
+													_1: {
+														ctor: '::',
+														_0: _elm_lang$html$Html$text(' for Noeli\'s CV'),
+														_1: {ctor: '[]'}
+													}
+												}),
+											_1: {ctor: '[]'}
+										}
+									}
+								}
 							}
 						}
-					}
-				}
+					}),
+				_1: {ctor: '[]'}
 			}
 		}
 	});
@@ -8634,7 +8717,11 @@ var _user$project$Main$titlePage = A2(
 							_1: {
 								ctor: '::',
 								_0: {ctor: '_Tuple2', _0: 'background-size', _1: 'cover'},
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'text-align', _1: 'center'},
+									_1: {ctor: '[]'}
+								}
 							}
 						}
 					}
@@ -8655,7 +8742,23 @@ var _user$project$Main$titlePage = A2(
 						_1: {
 							ctor: '::',
 							_0: {ctor: '_Tuple2', _0: 'font-family', _1: 'GlossAndBloom'},
-							_1: {ctor: '[]'}
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'font-size', _1: '4em'},
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'min-width', _1: '500px'},
+									_1: {
+										ctor: '::',
+										_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
+										_1: {
+											ctor: '::',
+											_0: {ctor: '_Tuple2', _0: 'top', _1: '500px'},
+											_1: {ctor: '[]'}
+										}
+									}
+								}
+							}
 						}
 					}),
 				_1: {ctor: '[]'}
@@ -8678,14 +8781,26 @@ var _user$project$Main$titlePage = A2(
 							_1: {
 								ctor: '::',
 								_0: {ctor: '_Tuple2', _0: 'font-family', _1: 'LibreBaskerville'},
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'font-size', _1: '2em'},
+									_1: {
+										ctor: '::',
+										_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
+										_1: {
+											ctor: '::',
+											_0: {ctor: '_Tuple2', _0: 'top', _1: '550px'},
+											_1: {ctor: '[]'}
+										}
+									}
+								}
 							}
 						}),
 					_1: {ctor: '[]'}
 				},
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('Circus Artist'),
+					_0: _elm_lang$html$Html$text('CIRCUS ARTIST'),
 					_1: {ctor: '[]'}
 				}),
 			_1: {ctor: '[]'}
@@ -8731,7 +8846,11 @@ var _user$project$Main$headerLink = function (title) {
 					_1: {
 						ctor: '::',
 						_0: {ctor: '_Tuple2', _0: 'margin', _1: '10px'},
-						_1: {ctor: '[]'}
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'font-family', _1: 'LibreBaskervilleBold'},
+							_1: {ctor: '[]'}
+						}
 					}
 				}),
 			_1: {ctor: '[]'}

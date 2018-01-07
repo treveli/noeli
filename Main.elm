@@ -83,6 +83,7 @@ headerLink title =
         [ style
             [ ( "display", "inline-block" )
             , ( "margin", "10px" )
+            , ( "font-family", "LibreBaskervilleBold" )
             ]
         ]
         [ text title ]
@@ -120,12 +121,17 @@ titlePage =
             , ( "background-color", "black" )
             , ( "background-image", """url("noeliflying.png")""" )
             , ( "background-size", "cover" )
+            , ( "text-align", "center" )
             ]
         ]
         [ h1
             [ style
                 [ ( "margin", "0px" )
                 , ( "font-family", "GlossAndBloom" )
+                , ( "font-size", "4em" )
+                , ( "min-width", "500px" )
+                , ( "position", "relative" )
+                , ( "top", "500px" )
                 ]
             ]
             [ text "Noeli Acoba" ]
@@ -133,9 +139,12 @@ titlePage =
             [ style
                 [ ( "margin", "0px" )
                 , ( "font-family", "LibreBaskerville" )
+                , ( "font-size", "2em" )
+                , ( "position", "relative" )
+                , ( "top", "550px" )
                 ]
             ]
-            [ text "Circus Artist" ]
+            [ text "CIRCUS ARTIST" ]
         ]
 
 
@@ -156,15 +165,37 @@ aboutMePage =
         [ h1
             [ style
                 [ ( "margin", "0px" )
+                , ( "margin-top", "70px" )
+                , ( "text-align", "center" )
+                , ( "font-family", "GlossAndBloom" )
                 ]
             ]
             [ text "About Me" ]
-        , p [] [ text "Noeli Acoba was a college student when she became captivated with circus. With her background in competitive figure skating, she quickly realized her true love for creating and performing new feats in the air. After graduating UC Davis with a degree in Biotechnology, she became a circus artist and never turned back." ]
-        , p [] [ text "Noeli has trained aerial rope and silks under both Julia Grace and Paper Doll Militia’s Co-Artistic Director, Rain Anya. She was accepted into and attended Cirque School LA’s Cirque Intensive for Emerging Artists under the mentorship of its founder, Cirque du Soleil veteran Aloysia Gavre." ]
-        , p [] [ text "Noeli was the Apprentice Mentorship Program (AMP) Student for 2017 and a member of the Pre-Professional Troupe at Kinetic Theory Circus Arts in Los Angeles, California. She trained full-time in her specialty (aerial rope), as well as single-point and static trapeze, basic acrobatics, dance, and physical theatre. At Kinetic Theory, she was mentored by renowned circus performer & instructor, Eric Newton (Cirque du Soleil & Cirque Eloize)." ]
-        , p [] [ text "She is also the Arts Administrator for the international aerial-theatre company Paper Doll Militia." ]
-        , p [] [ text "Equipped with the knowledge of diverse West Coast aerial styles, Noeli intricately blends static moments and dynamic movement within her innovative acts. Delivering raw, compelling storytelling through unique choreography, Noeli is a powerful force to be reckoned with." ]
-        , p [] [ text "Click here for Noeli's CV" ]
+        , div
+            [ style
+                [ ( "height", "432px" )
+                , ( "width", "432px" )
+                , ( "border", "5px solid rgba(255, 255, 255, 1)" )
+                , ( "box-shadow", "0 1px 3px rgba(0, 0, 0, 0.5)" )
+                , ( "background-image", """url("noeliheadshot.webp")""" )
+                , ( "background-position", "center" )
+                , ( "background-repeat", "no-repeat" )
+                , ( "background-size", "cover" )
+                ]
+            ]
+            []
+        , div
+            [ style
+                [ ( "font-family", "LibreBaskerville" )
+                ]
+            ]
+            [ p [] [ text "Noeli Acoba was a college student when she became captivated with circus. With her background in competitive figure skating, she quickly realized her true love for creating and performing new feats in the air. After graduating UC Davis with a degree in Biotechnology, she became a circus artist and never turned back." ]
+            , p [] [ text "Noeli has trained aerial rope and silks under both Julia Grace and Paper Doll Militia’s Co-Artistic Director, Rain Anya. She was accepted into and attended Cirque School LA’s Cirque Intensive for Emerging Artists under the mentorship of its founder, Cirque du Soleil veteran Aloysia Gavre." ]
+            , p [] [ text "Noeli was the Apprentice Mentorship Program (AMP) Student for 2017 and a member of the Pre-Professional Troupe at Kinetic Theory Circus Arts in Los Angeles, California. She trained full-time in her specialty (aerial rope), as well as single-point and static trapeze, basic acrobatics, dance, and physical theatre. At Kinetic Theory, she was mentored by renowned circus performer & instructor, Eric Newton (Cirque du Soleil & Cirque Eloize)." ]
+            , p [] [ text "She is also the Arts Administrator for the international aerial-theatre company Paper Doll Militia." ]
+            , p [] [ text "Equipped with the knowledge of diverse West Coast aerial styles, Noeli intricately blends static moments and dynamic movement within her innovative acts. Delivering raw, compelling storytelling through unique choreography, Noeli is a powerful force to be reckoned with." ]
+            , p [] [ a [] [ text "Click here" ], text " for Noeli's CV" ]
+            ]
         ]
 
 
